@@ -18,23 +18,17 @@ class Solution {
               {
                   len = LPS[len-1];
               }
-              else
-              {
-                  if(len!=0){
-                      len = LPS[len-1];
-                  }
-                  else{
+              else{
                       LPS[i]=0;
                       i++;
-                  }
               }
           }
       }
   }
     vector<int> search(string &pat, string &txt) {
         // code here
-        int N= txt.length();
-        int M= pat.length();
+        int N= txt.size();
+        int M= pat.size();
         
         vector<int>result;
         
